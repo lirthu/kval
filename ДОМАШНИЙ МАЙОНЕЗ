@@ -1,0 +1,72 @@
+sudo apt update && sudo apt upgrade -y
+
+              ПРИНТЕР 
+
+sudo apt install cups-pdf
+
+              БРАУЗЕР
+
+sudo apt update
+sudo apt install firefox
+
+
+        СОЗДАНИЕ РЕЗЕРВНОЙ КОПИИ(16.04)
+
+sudo add-apt-repository ppa:nemh/systemback -y
+sudo apt-get update
+sudo apt-get install systemback -y
+
+далее создание в самом приложении systemback
+создать Live образ 
+
+
+СОЗДАНИЕ РЕЗЕРВНОЙ КОПИИ(18.0 ++)
+
+sudo add-apt-repository ppa:nemh/systemback -y
+sudo apt-get update
+sudo apt-get install systemback -y
+
+            СОЗДАНИЕ BACKUP
+
+sudo mkdir /backup
+sudo tar -cvpzf /backup/ubuntu_backup.tar.gz \
+--exclude=/backup \
+--exclude=/proc \
+--exclude=/sys \
+--exclude=/mnt \
+--exclude=/media \
+--exclude=/dev \
+--exclude=/tmp \
+--exclude=/run \
+/
+
+
+МАГАЗИН ПРИЛОЖЕНИЙ sudo apt update; sudo apt install software-center
+
+Логи sudo apt install gnome-system-log
+
+# Удаленное подключение к активной сессии
+hostname -I - узнаем ip
+ssh -X имя_пользователя@ip-адресс
+exit - выход
+
+проверка сетевеого соединения
+Ping -c 4 8.8.8.8
+
+
+# Установка базового ПО
+# LibreOffice устанавливается через центр приложений
+sudo apt install vim git zip htop gnome-calculator
+
+# Группы пользователей
+sudo apt install gnome-system-tools 
+Сама настройка групп в приложении
+
+
+
+- отключена композиция рабочего стола
+metacity --replace &
+unity --replace &
+reboot
+
+
