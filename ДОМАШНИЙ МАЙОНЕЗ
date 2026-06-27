@@ -73,3 +73,7 @@ https://www.swrit.ru/articles/rukovodstvo-polzovatelya-gost-59795-2021.html
 https://pixel-ai.terratech.ru/pdf/pixelai-i3-rukovodstvo_polzovatelya.pdf
 
 
+sudo apt-add-repository ppa:cubic-wizard/classic
+sudo apt-get update
+sudo apt-get install cubic
+
